@@ -1,0 +1,39 @@
+JEETHU & POOJA WEDDING RSVP — FREE GOOGLE SHEETS SETUP
+
+PART 1 — CREATE THE SPREADSHEET
+1. On your laptop, sign in to the Google account that should own the guest list.
+2. Go to https://sheets.new
+3. Name the spreadsheet: Jeethu & Pooja Wedding RSVPs
+4. Keep this spreadsheet tab open.
+
+PART 2 — ADD THE SCRIPT
+1. In the spreadsheet, click Extensions > Apps Script.
+2. In the editor, delete the sample function myFunction() if present.
+3. Open the supplied file Google-Sheets-RSVP-Code.gs in a text editor, copy all its contents, and paste into the Apps Script editor.
+4. Click Save and name the project Wedding RSVP Form.
+
+PART 3 — DEPLOY AS A WEB APP
+1. Click Deploy > New deployment.
+2. Click the gear icon / Select type and choose Web app.
+3. Description: Wedding RSVP endpoint.
+4. Execute as: Me.
+5. Who has access: Anyone. This is needed so guests can submit the public form. The form collects the name and phone number guests choose to provide, so restrict spreadsheet access to trusted organisers.
+6. Click Deploy.
+7. Google may ask you to authorise access. Review the permissions and approve using the account that owns the spreadsheet.
+8. Copy the Web app URL ending in /exec. Do not send the spreadsheet's private URL.
+
+PART 4 — CONNECT IT TO THE WEBSITE
+Send the Web app URL ending in /exec to ChatGPT. The website code needs that URL inserted in the RSVP_ENDPOINT setting, then the updated index.html needs to be uploaded to the GitHub repository and committed to main.
+
+PART 5 — TEST
+1. Open the deployed wedding website.
+2. Submit one clearly labelled test RSVP using your own test details.
+3. Open the spreadsheet and confirm a new row appears.
+4. Delete the test row afterward if desired.
+5. To download the guest list, use File > Download > Microsoft Excel (.xlsx) in Google Sheets.
+
+IMPORTANT NOTES
+- Do not share the spreadsheet itself publicly. Only the web app endpoint should be used by the website.
+- Anyone with the web app URL may be able to submit entries, so keep the URL out of public posts other than the wedding website code.
+- If the Apps Script code changes later, use Deploy > Manage deployments > Edit and deploy a new version.
+- The photo-upload button opens the Google Photos link supplied by you. Check that the link actually permits guests to add/upload photos; some Google Photos links are view-only. If it is view-only, create a shared album with link sharing and enable contributor permissions, then replace the link in the website.
