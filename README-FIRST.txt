@@ -1,9 +1,7 @@
-JEETHU & POOJA — CONSOLIDATED WEBSITE UPDATE
+JEETHU & POOJA — FINAL WEBSITE UPDATE
 
-Included: Save the Date countdown to 10 December 2026 at 12:25 PM IST; Sangeeth only (Mehandi removed from website text); centred RSVP form; attendance date choices for 9 Dec, 10 Dec, or both; existing Google Sheets endpoint; venue and Google Photos link.
+This ZIP includes the animated temple-door opening, correct JP logo on the reveal, event images H1.png / S1.png / M1.png, and only U1.png in Wedding Memories. Old gallery1.jpg–gallery4.jpg assets have been intentionally excluded.
 
-IMPORTANT IMAGE NOTE: The four image files H1.png, S1.png, M1.png and U1.png are TEMPORARY PREVIEW COPIES of the old site images because your newly selected PNGs were not attached in this chat. Before uploading this folder to GitHub, replace those four files with your actual new PNG images, keeping the exact filenames H1.png, S1.png, M1.png and U1.png.
+To publish: extract this ZIP, upload all included files to the root of your GitHub repository (replace matching files), commit to main, and wait for Vercel to redeploy. Then test in a private/incognito browser window.
 
-PUBLISH: Upload/replace index.html and all image files in this folder at the root of your GitHub repository. Commit to main and wait for Vercel to redeploy. Keep existing other files if your repository has any.
-
-RSVP: Website sends attendingDates to the existing Apps Script endpoint. Make sure your Apps Script Code.gs is the updated date-aware version, deploy a New version, then test an RSVP and confirm the selected dates appear in Google Sheets. The site uses no-cors, so the spreadsheet row is the proof of success.
+The reveal screen contains no dates. Tap the invitation to animate the doors open; the date and countdown appear on the main invitation after the reveal.
