@@ -1,115 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#12372b"><meta name="description" content="A phone-friendly royal South Indian wedding invitation for Jeethu & Pooja, 9–10 December 2026 at The Peacock Grove.">
-<title>Jeethu & Pooja | A Royal Wedding Invitation</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--green:#12372b;--green2:#204c3a;--ivory:#fff8e9;--paper:#fffdf7;--gold:#bd9650;--gold2:#e7cc8a;--ink:#26372d;--muted:#746e60;--line:#dfc994;--shadow:0 18px 55px #1a2d2017}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--ivory);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.65}body.locked{overflow:hidden}button,input,select{font:inherit}a{color:inherit}img{max-width:100%;display:block}.serif,h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500}.wrap{width:min(1120px,92%);margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:.7rem;font-weight:700;color:var(--gold)}.ornament{color:var(--gold);letter-spacing:.45em}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:12px 21px;border:1px solid var(--gold);border-radius:3px;background:var(--green);color:var(--ivory);text-decoration:none;font-weight:600;letter-spacing:.04em;cursor:pointer;transition:transform .25s,background .25s}.btn:hover{background:var(--green2);transform:translateY(-2px)}.btn.outline{background:transparent;color:var(--green)}.topbar{position:sticky;top:0;z-index:20;background:#fff8e9ed;backdrop-filter:blur(14px);border-bottom:1px solid #bd96504d}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{display:flex;align-items:center;gap:10px;font-family:'Playfair Display',serif;font-size:1.12rem;color:var(--green);text-decoration:none}.brand img{width:40px;height:40px;object-fit:contain;border-radius:50%;mix-blend-mode:multiply}.navlinks{display:flex;align-items:center;gap:22px}.navlinks a{text-decoration:none;font-size:.85rem}.menu-toggle{display:none;background:transparent;border:1px solid var(--line);padding:8px 12px;color:var(--green)}
-/* Royal doors intro */
-.intro{position:fixed;inset:0;z-index:1000;background:#0d211a;display:grid;place-items:center;overflow:hidden;transition:visibility 1s}.intro.closed{visibility:visible}.intro.opened{visibility:hidden;pointer-events:none}.intro-bg{position:absolute;inset:0;background:linear-gradient(#10291c66,#10291c77),url('peacock-grove.jpg') center/cover;filter:saturate(.8)}.intro-frame{position:absolute;inset:clamp(10px,3vw,34px);border:1px solid #d7b66b99;outline:1px solid #d7b66b40;outline-offset:-9px;pointer-events:none}.intro-center{position:relative;z-index:10;text-align:center;width:min(90%,470px);color:var(--ivory);padding:22px 12px;background:radial-gradient(ellipse at center,#0d211ae8 0%,#0d211abf 64%,transparent 100%);border-radius:24px}.intro-logo{width:clamp(125px,32vw,190px);height:clamp(125px,32vw,190px);object-fit:contain;margin:0 auto 18px;border-radius:50%;background:#fff8e9ed;border:1px solid var(--gold2);box-shadow:0 0 0 8px #c49b4b20,0 0 60px #f4d58b30}.intro-kicker{letter-spacing:.28em;text-transform:uppercase;font-size:.68rem;color:var(--gold2)}.intro h1{font-size:clamp(2rem,7vw,3.6rem);line-height:1.12;margin:10px 0;color:#fff4d8}.intro p{letter-spacing:.13em;font-size:.78rem;text-transform:uppercase;color:#f0dfb8}.open-btn{margin-top:16px;border-radius:999px;background:linear-gradient(135deg,#f1dca6,#b48a42);color:#20372a;border:1px solid #fff0c4;padding:14px 24px;box-shadow:0 0 0 7px #dfba6924;min-height:54px}.door{position:absolute;top:0;bottom:0;width:49.8%;z-index:2;background:linear-gradient(90deg,#102a20,#1a4331 48%,#0e281e);border:2px solid #bd9650;box-shadow:inset 0 0 0 8px #c49b4b20,inset 0 0 55px #0008;transition:transform 1.45s cubic-bezier(.76,0,.24,1)}.door:before{content:'';position:absolute;inset:5%;border:1px solid #d6b568a8;outline:1px solid #d6b56840;outline-offset:-8px;background:repeating-linear-gradient(90deg,transparent 0 32px,#d5b36b0b 33px 35px)}.door:after{content:'✧';position:absolute;top:50%;color:var(--gold2);font-size:clamp(2rem,7vw,4rem);text-shadow:0 0 20px #e8c77c80}.door.left{left:0;border-radius:0 12px 12px 0}.door.left:after{right:18px;transform:translateY(-50%)}.door.right{right:0;border-radius:12px 0 0 12px}.door.right:after{left:18px;transform:translateY(-50%)}.intro.opened .door.left{transform:translateX(-103%)}.intro.opened .door.right{transform:translateX(103%)}.intro.opened .intro-center{opacity:0;transform:scale(.96);transition:opacity .35s,transform .5s}.intro.opened .intro-frame{opacity:0;transition:opacity .5s}.intro.opened .intro-bg{transform:scale(1.06);transition:transform 1.4s}.intro-center{transition:opacity .35s,transform .5s;isolation:isolate}.skip-intro{position:absolute;bottom:18px;z-index:4;color:#fff0c9a8;background:none;border:0;text-decoration:underline;font-size:.75rem}
-.hero{position:relative;min-height:75vh;display:grid;align-items:center;overflow:hidden;background:linear-gradient(90deg,#fff8e9f5 0%,#fff8e9e6 43%,#fff8e930 100%),url('peacock-grove.jpg') center/cover}.hero-grid{display:grid;grid-template-columns:1.1fr .8fr;align-items:center;gap:30px;padding:68px 0}.hero h1{font-size:clamp(2.7rem,6vw,5.2rem);line-height:1.05;margin:15px 0;color:var(--green)}.hero h1 em{display:block;font-size:.62em;color:var(--gold);font-style:italic;margin:.15em 0}.hero p{color:#5f6658}.invite-card{padding:35px 22px;text-align:center;background:#fffdf0e8;border:1px solid var(--gold);outline:1px solid #bd96504a;outline-offset:6px;max-width:350px;margin:auto;box-shadow:var(--shadow);border-radius:48% 48% 4px 4px}.invite-card img{width:96px;height:96px;object-fit:contain;margin:auto;border-radius:50%}.invite-card h2{font-size:2.1rem;line-height:1.2;color:var(--green);margin:14px 0 5px}.invite-card p{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.section{padding:76px 0}.section.dark{background:var(--green);color:var(--ivory)}.section-head{text-align:center;max-width:700px;margin:0 auto 34px}.section-head h2{font-size:clamp(2rem,4vw,3.2rem);color:var(--green);margin:7px 0}.dark .section-head h2{color:var(--ivory)}.section-head p{color:var(--muted);margin:0}.dark .section-head p{color:#e6dcc4}.paper{background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow)}.event-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.event-card{overflow:hidden;border-radius:4px}.event-image{height:240px;background-position:center;background-size:cover;position:relative}.event-image:after{content:'';position:absolute;inset:40% 0 0;background:linear-gradient(transparent,#10291b66)}.event-body{padding:22px}.event-body h3{font-size:1.55rem;margin:0;color:var(--green)}.event-time{font-weight:700;color:#74633d;font-size:.9rem}.dress{display:inline-block;padding:6px 10px;border:1px solid var(--line);color:var(--green);font-size:.78rem;margin:10px 0}.event-body p{color:var(--muted);font-size:.9rem}.text-link{font-weight:700;color:var(--green);text-decoration:none;font-size:.88rem}.rsvp-grid,.venue-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch}.form-card,.venue-info{padding:clamp(22px,4vw,36px);border-radius:4px}.form-card h3,.venue-info h3{font-size:2rem;color:var(--green);margin:0 0 5px}.form-card>p,.venue-info p{color:var(--muted);font-size:.92rem}.field{margin:16px 0}.field label{display:block;font-weight:600;font-size:.86rem;margin-bottom:6px;color:var(--green)}.form-card .field>label{color:var(--green)!important}.form-card .option{color:var(--green);background:#fffdf8}.form-card .notice{color:#625b4d}.form-card h3,.form-card p{color:var(--green)}.field input,.field select{width:100%;min-height:48px;border:1px solid #d9c89e;background:#fffdf8;color:var(--ink);padding:11px 13px;border-radius:2px}.field input:focus,.field select:focus{outline:2px solid #bd965066;border-color:var(--gold)}.options{display:grid;grid-template-columns:1fr 1fr;gap:8px}.option{border:1px solid var(--line);padding:12px;display:flex;gap:8px;align-items:center;font-size:.85rem}.stay-panel{margin-top:18px;padding:17px;border:1px solid var(--gold);background:#f8f0dc}.stay-panel h4{font-family:'Playfair Display',serif;font-size:1.25rem;margin:0}.notice{font-size:.86rem;color:var(--muted)}.form-status{min-height:1.2em;margin-top:12px;font-size:.86rem;color:var(--green)}.venue-photo{width:100%;height:100%;min-height:360px;object-fit:cover}.venue-info{display:flex;flex-direction:column;justify-content:center}.venue-info .btn{align-self:flex-start;margin-top:12px}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery-grid img{width:100%;height:200px;object-fit:cover;border:1px solid var(--line);padding:4px;background:#fffdf7}.gallery-note{text-align:center;color:var(--muted);font-size:.86rem;margin-top:20px}.contact{padding:40px 20px;text-align:center;border:1px solid var(--gold);background:#f8efd9}.contact h2{font-size:2.3rem;color:var(--green);margin:8px 0}.footer{padding:30px 0;text-align:center;font-size:.8rem;color:var(--muted)}[hidden]{display:none!important}.mobile-menu{display:none}.menu-toggle{cursor:pointer}@media(max-width:800px){.navlinks{display:none}.menu-toggle{display:block}.hero{min-height:unset;background:linear-gradient(#fff8e9e9,#fff8e9df),url('peacock-grove.jpg') center/cover}.hero-grid{grid-template-columns:1fr;padding:50px 0 58px;text-align:center;gap:35px}.hero p{margin-inline:auto}.hero-actions{justify-content:center}.invite-card{max-width:300px}.event-grid{grid-template-columns:1fr}.event-card{display:grid;grid-template-columns:.78fr 1.22fr}.event-image{height:100%;min-height:240px}.rsvp-grid,.venue-grid{grid-template-columns:1fr}.venue-photo{min-height:250px;max-height:370px}.gallery-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid img{height:170px}.section{padding:56px 0}.mobile-menu.show{display:flex;position:absolute;top:70px;left:0;right:0;padding:18px 5%;background:var(--ivory);border-bottom:1px solid var(--line);flex-direction:column;gap:13px}.mobile-menu a{text-decoration:none}}@media(max-width:480px){.intro-center{width:min(92%,390px);padding:14px 10px}.intro-kicker{font-size:.58rem;letter-spacing:.18em}.intro p{font-size:.68rem;letter-spacing:.08em;line-height:1.7}.open-btn{padding:12px 16px;min-height:50px;font-size:.92rem}.brand{font-size:1rem}.brand img{width:34px;height:34px}.nav .btn{padding:9px 12px;min-height:40px;font-size:.8rem}.hero h1{font-size:2.8rem}.event-card{display:block}.event-image{height:205px;min-height:0}.options{grid-template-columns:1fr}.gallery-grid img{height:140px}.section{padding:48px 0}.intro-frame{inset:10px}.intro-logo{width:130px;height:130px}.intro h1{font-size:2.25rem}.intro-center{padding:10px}}
-/* Extra phone-first refinements */
-html{ -webkit-text-size-adjust:100%; }
-button,a,input,select{touch-action:manipulation}
-.btn{min-height:48px}
-.field label,.form-card .field>label{color:#12372b!important}
-.form-card .notice{color:#514b40!important}
-.options{align-items:stretch}
-.option{min-height:48px;border-radius:8px;line-height:1.4}
-.option input{width:18px;height:18px;flex:0 0 18px;accent-color:#12372b}
-.field input,.field select{font-size:16px;min-height:50px;border-radius:8px}
-.field input::placeholder{color:#817b70;opacity:1}
-.event-card,.form-card,.venue-info,.contact{border-radius:12px}
-.event-image{background-color:#f3e6c9}
-.gallery-grid img{border-radius:10px}
-@media(max-width:600px){
-  .wrap{width:min(100% - 30px,520px)}
-  .topbar .nav{min-height:64px;gap:8px}
-  .brand{font-size:.96rem;gap:7px;min-width:0}
-  .brand img{width:32px;height:32px;flex:0 0 32px}
-  .nav>.btn{padding:9px 12px;min-height:42px;font-size:.78rem}
-  .menu-toggle{min-height:42px;min-width:44px;border-radius:8px}
-  .hero-grid{padding:38px 0 42px;gap:24px}
-  .hero h1{font-size:clamp(2.35rem,11vw,3.3rem);overflow-wrap:anywhere}
-  .hero-actions{display:grid;grid-template-columns:1fr;width:100%;max-width:330px;margin:22px auto 0}
-  .hero-actions .btn{width:100%}
-  .invite-card{width:min(100%,290px);padding:27px 18px;border-radius:44% 44% 12px 12px}
-  .section{padding:42px 0}
-  .section-head{margin-bottom:24px}
-  .section-head h2{font-size:clamp(1.9rem,9vw,2.6rem);line-height:1.15}
-  .event-grid{grid-template-columns:minmax(0,1fr);gap:16px}
-  .event-card{display:block;min-width:0}
-  .event-image{height:220px;min-height:0}
-  .event-body{padding:18px}
-  .event-body h3{font-size:1.45rem;overflow-wrap:anywhere}
-  .dress{line-height:1.5;white-space:normal}
-  .rsvp-grid,.venue-grid{grid-template-columns:minmax(0,1fr);gap:16px}
-  .form-card,.venue-info{padding:20px 16px}
-  .form-card h3,.venue-info h3{font-size:1.7rem;line-height:1.2}
-  .options{grid-template-columns:minmax(0,1fr);gap:9px}
-  .option{padding:12px;font-size:.92rem}
-  .stay-panel{padding:14px}
-  .form-card button[type=submit],.venue-info .btn,.contact .btn{width:100%;white-space:normal}
-  .venue-photo{min-height:220px;max-height:300px;border-radius:12px}
-  .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-  .gallery-grid img{height:clamp(120px,38vw,180px);padding:3px}
-  .contact{padding:28px 16px}
-  .contact h2{font-size:clamp(1.8rem,8vw,2.3rem);line-height:1.2}
-  .intro-frame{inset:9px}
-  .intro-center{width:calc(100% - 28px);max-width:390px;padding:14px 8px}
-  .intro-logo{width:clamp(105px,30vw,145px);height:clamp(105px,30vw,145px);margin-bottom:12px}
-  .intro h1{font-size:clamp(2rem,9vw,2.7rem)}
-  .intro-kicker{letter-spacing:.14em;font-size:.62rem}
-  .intro p{font-size:.68rem;letter-spacing:.07em}
-  .open-btn{width:min(100%,280px);white-space:normal}
-  .door{width:50%}
-  .footer .brand{justify-content:center}
-}
-@media(max-width:360px){
-  .wrap{width:calc(100% - 24px)}
-  .brand{font-size:.86rem}
-  .nav>.btn{padding:8px 9px}
-  .hero h1{font-size:2.2rem}
-  .event-image{height:190px}
-}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
-</style></head>
-<body class="locked">
-<div class="intro closed" id="intro" aria-label="Wedding invitation welcome">
-  <div class="intro-bg"></div><div class="intro-frame"></div>
-  <div class="door left"></div><div class="door right"></div>
-  <div class="intro-center"><img class="intro-logo" src="jp-logo.jpg" alt="Jeethu and Pooja floral JP monogram"><div class="intro-kicker">With the blessings of our families</div><h1>Jeethu <span style="color:#d9b96e">&</span> Pooja</h1><div class="ornament">✦ ❧ ✦</div><p>9 & 10 December 2026 · The Peacock Grove</p><button class="btn open-btn" id="openInvite" type="button">✧ Open the Invitation ✧</button></div>
-  <button class="skip-intro" id="skipIntro" type="button">Skip opening</button>
-</div>
-<header class="topbar"><div class="wrap nav"><a class="brand" href="#home"><img src="jp-logo.jpg" alt="JP monogram">Jeethu <span style="color:var(--gold)">&</span> Pooja</a><nav class="navlinks"><a href="#events">Celebrations</a><a href="#rsvp">RSVP</a><a href="#venue">Venue</a><a href="#memories">Memories</a></nav><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Open navigation">☰</button><a class="btn" href="#rsvp">RSVP</a></div><nav class="mobile-menu" id="mobileMenu"><a href="#events">Celebrations</a><a href="#rsvp">RSVP</a><a href="#venue">Venue</a><a href="#memories">Memories</a><a href="#contact">Contact</a></nav></header>
-<main>
-<section class="hero" id="home"><div class="wrap hero-grid"><div><div class="eyebrow">With the blessings of our families</div><h1>Jeethu <em>&</em> Pooja</h1><div class="ornament">✦ ❧ ✦</div><p><strong>9 & 10 December 2026</strong><br>The Peacock Grove</p><p>A celebration of love, family, and traditions. We would be honoured to have you with us.</p><div class="hero-actions"><a class="btn" href="#events">Explore celebrations</a><a class="btn outline" href="https://maps.app.goo.gl/Tce5NUdX1iUUzeFNA?g_st=ic" target="_blank" rel="noopener">Get directions ↗</a></div></div><aside class="invite-card"><img src="jp-logo.jpg" alt="JP floral monogram"><div class="ornament">✦ ❧ ✦</div><h2>Jeethu<br>& Pooja</h2><p>Joyfully invite you<br>to celebrate their wedding</p><div class="ornament">9 · 10 December 2026</div></aside></div></section>
-<section class="section" id="events"><div class="wrap"><div class="section-head"><div class="eyebrow">Three beautiful moments</div><h2>Our Celebrations</h2><p>One joyful celebration, surrounded by the people we love.</p></div><div class="event-grid">
-<article class="event-card paper"><div class="event-image" style="background-image:url('haldi.jpg')"></div><div class="event-body"><h3>Haldi</h3><div class="event-time">9 December · 2:00 PM onwards</div><span class="dress">Dress code: Pink or Yellow</span><p>A warm, joyful celebration filled with blessings, flowers, and sunshine.</p><a class="text-link" href="https://maps.app.goo.gl/Tce5NUdX1iUUzeFNA?g_st=ic" target="_blank" rel="noopener">The Peacock Grove · Directions ↗</a></div></article>
-<article class="event-card paper"><div class="event-image" style="background-image:url('sangeet.jpg')"></div><div class="event-body"><h3>Mehandi & Sangeeth</h3><div class="event-time">9 December · 6:00 PM onwards</div><span class="dress">Dress code: Bling Bling</span><p>An evening of music, sparkle, dance, and celebration.</p><a class="text-link" href="https://maps.app.goo.gl/Tce5NUdX1iUUzeFNA?g_st=ic" target="_blank" rel="noopener">The Peacock Grove · Directions ↗</a></div></article>
-<article class="event-card paper"><div class="event-image" style="background-image:url('muhurtham.jpg')"></div><div class="event-body"><h3>Muhurtham</h3><div class="event-time">10 December · 12:25 PM</div><span class="dress">Dress code: Traditional</span><p>Join us for the sacred wedding ceremony and the beginning of a new chapter.</p><a class="text-link" href="https://maps.app.goo.gl/Tce5NUdX1iUUzeFNA?g_st=ic" target="_blank" rel="noopener">The Peacock Grove · Directions ↗</a></div></article>
-</div></div></section>
-<section class="section dark" id="rsvp"><div class="wrap"><div class="section-head"><div class="eyebrow">Kindly respond</div><h2>Your RSVP</h2><p>Help us make the arrangements for your visit.</p></div><div class="rsvp-grid"><form class="paper form-card" id="rsvp-form"><h3>We hope you can join us</h3><p>Share your details below. Fields marked * are required.</p>
-<div class="field"><label for="name">Full name *</label><input id="name" name="name" autocomplete="name" required placeholder="Enter your full name"></div><div class="field"><label for="phone">Phone / WhatsApp number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="Your phone number"></div>
-<div class="field"><label>Will you be attending? *</label><div class="options"><label class="option"><input type="radio" name="attending" value="Yes, attending" required> Yes, I'll be there</label><label class="option"><input type="radio" name="attending" value="Unable to attend" required> Unable to attend</label></div></div>
-<div class="field"><label for="city">Where are you travelling from? *</label><select id="city" name="city" required><option value="" selected disabled>Select your city</option><option value="Bangalore">Bangalore</option><option value="Gulbarga (Kalaburagi)">Gulbarga (Kalaburagi)</option><option value="Other">Another city</option></select></div>
-<div class="field" id="other-city-wrap" hidden><label for="other-city">Which city? *</label><input id="other-city" name="otherCity" placeholder="Enter your city"></div>
-<div class="field" id="traveller-count-wrap" hidden><label for="traveller-count">Number of people travelling *</label><select id="traveller-count" name="travellerCount"><option value="" selected disabled>Select number of people</option><option>1</option><option>2</option><option>3–4</option><option>5 or more</option></select></div>
-<div class="stay-panel" id="stay-panel" hidden><h4>Accommodation arrangements</h4><p class="notice">For guests travelling from outside Bangalore, we will share accommodation details privately before the wedding.</p><div class="field"><label for="stay">Do you need accommodation? *</label><select id="stay" name="accommodation"><option value="" selected disabled>Please select</option><option>Yes</option><option>No</option></select></div></div>
-<div class="field"><label for="notes">Anything we should know? (optional)</label><input id="notes" name="notes" placeholder="Dietary or other arrangements"></div><button class="btn" type="submit">Send RSVP securely ↗</button><div class="form-status" id="rsvp-status" role="status" aria-live="polite"></div><p class="notice">Your RSVP will open a WhatsApp message until the spreadsheet connection is configured. Please do not enter sensitive information.</p></form>
-<div class="venue-info paper"><div class="eyebrow">Your presence is our present</div><h3>The Peacock Grove</h3><p>We look forward to celebrating with you at our wedding venue.</p><p><strong>9 December 2026</strong><br>Haldi at 2:00 PM · Mehandi & Sangeeth at 6:00 PM</p><p><strong>10 December 2026</strong><br>Muhurtham at 12:25 PM</p><a class="btn" href="https://maps.app.goo.gl/Tce5NUdX1iUUzeFNA?g_st=ic" target="_blank" rel="noopener">Open Google Maps ↗</a><p class="notice">RSVP spreadsheet connection will be activated once the Google Apps Script endpoint is configured.</p></div></div></div></section>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173c32">
+  <title>Jeethu &amp; Pooja | Wedding Invitation</title>
+  <meta name="description" content="Join Jeethu and Pooja for their wedding celebrations on 9 and 10 December 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#173c32;--deep-green:#102b24;--gold:#a77b32;--cream:#fffaf0;--text:#26352f;--muted:#4b5b52;--border:#ddcfb4}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;background:var(--cream);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.2}button,input,select{font:inherit}a{color:inherit}
+    .intro{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;padding:24px;overflow-y:auto;text-align:center;background:var(--deep-green);color:var(--cream);opacity:1;visibility:visible;transition:opacity 1s ease,visibility 1s ease}.intro.hidden{opacity:0;visibility:hidden;pointer-events:none}.intro-photo{display:block;width:min(76vw,330px);height:min(47vh,390px);min-height:190px;object-fit:cover;object-position:center;border:3px solid #c6a15e;border-radius:170px 170px 12px 12px;background:#24483d}.intro .eyebrow{margin:0;color:#f0d8a2}.intro h1{margin:0;color:#f0d8a2;font-size:clamp(2.2rem,8vw,3.5rem)}.intro-description{margin:0;color:#fffaf0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border:0;border-radius:6px;background:var(--gold);color:#fff;font-weight:700;text-align:center;text-decoration:none;cursor:pointer}.btn:disabled{opacity:.65;cursor:wait}.btn:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #d7ad5e;outline-offset:3px}
+    .hero{padding:62px 20px 48px;text-align:center;background:linear-gradient(160deg,#fffaf0,#f2e4cf);border-bottom:1px solid #e6d4b4}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:.78rem;font-weight:700}.hero h1{margin:15px 0;color:var(--green);font-size:clamp(2.8rem,10vw,5rem)}.subtitle{max-width:570px;margin:0 auto;color:var(--muted)}.date{margin:23px 0;color:var(--green);font-weight:700}main{width:min(100% - 32px,820px);margin:0 auto}section{padding:34px 0}.section-title{margin:0 0 10px;color:var(--green);text-align:center;font-size:clamp(1.8rem,6vw,2.5rem)}.section-description{max-width:610px;margin:0 auto 23px;color:var(--muted);text-align:center}
+    .events{display:grid;grid-template-columns:1fr;gap:16px}.event{padding:22px;border:1px solid var(--border);border-radius:12px;background:#fffdf8}.event h3{margin:0 0 8px;color:var(--green);font-size:1.5rem}.event p{margin:7px 0}.dress-code{display:inline-block;margin-top:8px;padding:6px 10px;border-radius:5px;background:#f2e4c9;color:#4c3515;font-size:.92rem;font-weight:700}.venue{padding:26px 20px;border-radius:12px;background:var(--green);color:#fff;text-align:center}.venue h2{color:#f0d8a2}.venue p{color:#fff}.venue .btn{background:#f0d8a2;color:#173c32}
+    .rsvp-card{padding:22px;border:1px solid var(--border);border-radius:12px;background:#fff;box-shadow:0 8px 28px #173c320d}.field{margin-bottom:18px}.field>label,.field-label{display:block;margin-bottom:7px;color:#243b31;font-weight:700}input[type=text],input[type=tel],input[type=number],select{display:block;width:100%;min-height:48px;padding:11px 12px;border:1px solid #8b978f;border-radius:6px;background:#fff;color:#202b25}.radio-options{display:grid;grid-template-columns:1fr;gap:10px}.radio-option{display:flex;align-items:flex-start;gap:10px;min-width:0;padding:13px;border:1px solid #c6cfc8;border-radius:8px;background:#fff;color:#26352f;cursor:pointer;overflow-wrap:anywhere}.radio-option input{flex:0 0 auto;width:18px;height:18px;margin:3px 0 0;accent-color:var(--green)}.accommodation{padding:16px;border:1px solid #c6b184;border-radius:8px;background:#fff8e8}.accommodation strong{display:block;margin-bottom:6px;color:#493414}.accommodation p{margin:0;color:#493f31}.hidden-field{display:none!important}.form-message{margin-top:14px;color:var(--green);font-weight:700}footer{padding:28px 16px;text-align:center;color:var(--muted);font-size:.9rem}
+    @media(min-width:640px){.events{grid-template-columns:repeat(2,minmax(0,1fr))}.event:last-child{grid-column:1/-1}.rsvp-card{padding:30px}.radio-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <div class="intro" id="intro">
+    <img class="intro-photo" src="couple.png" alt="Jeethu and Pooja" onerror="this.style.display='none'">
+    <p class="eyebrow">Together with our families</p>
+    <h1>Jeethu &amp; Pooja</h1>
+    <p class="intro-description">You're invited to celebrate our wedding</p>
+    <button class="btn" id="openInvitation" type="button">Open the Invitation</button>
+  </div>
+  <header class="hero">
+    <p class="eyebrow">A celebration of love</p>
+    <h1>Jeethu &amp; Pooja</h1>
+    <p class="subtitle">With the blessings of our families, we invite you to join us for our wedding celebrations.</p>
+    <p class="date">9 &amp; 10 December 2026</p>
+    <a class="btn" href="#rsvp">RSVP Now</a>
+  </header>
+  <main>
+    <section id="events">
+      <h2 class="section-title">Wedding Celebrations</h2>
+      <p class="section-description">Two beautiful days filled with traditions, laughter and memories.</p>
+      <div class="events">
+        <article class="event"><h3>Haldi</h3><p><strong>9 December 2026</strong></p><p>2:00 PM</p><span class="dress-code">Dress code: Pink or Yellow</span></article>
+        <article class="event"><h3>Mehandi &amp; Sangeeth</h3><p><strong>9 December 2026</strong></p><p>6:00 PM</p><span class="dress-code">Dress code: Bling Bling</span></article>
+        <article class="event"><h3>Muhurtham</h3><p><strong>10 December 2026</strong></p><p>12:25 PM</p><span class="dress-code">Dress code: Traditional</span></article>
+      </div>
+    </section>
+    <section><div class="venue"><h2>The Peacock Grove</h2><p>We look forward to celebrating with you.</p><a class="btn" href="https://maps.app.goo.gl/Tce5NUdX1iUUzeFNA?g_st=ic" target="_blank" rel="noopener noreferrer">Open Venue Map</a></div></section>
+    <section id="rsvp">
+      <h2 class="section-title">RSVP</h2>
+      <p class="section-description">Please respond so we can make the necessary arrangements.</p>
+      <form class="rsvp-card" id="rsvpForm">
+        <div class="field"><label for="guestName">Full name *</label><input id="guestName" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="guestPhone">Phone number *</label><input id="guestPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+        <fieldset class="field" style="border:0;padding:0;margin-left:0;margin-right:0"><legend class="field-label">Will you be attending? *</legend><div class="radio-options"><label class="radio-option"><input type="radio" name="attendance" value="Yes, I'll be there" required><span>Yes, I'll be there</span></label><label class="radio-option"><input type="radio" name="attendance" value="Unable to attend" required><span>Unable to attend</span></label></div></fieldset>
+        <div class="field"><label for="travelCity">Where are you travelling from? *</label><select id="travelCity" name="city" required><option value="">Select your city</option><option value="Bangalore">Bangalore</option><option value="Gulbarga (Kalaburagi)">Gulbarga (Kalaburagi)</option><option value="Other">Other city</option></select></div>
+        <div id="otherCityField" class="field hidden-field"><label for="otherCity">Enter your city *</label><input id="otherCity" name="otherCity" type="text"></div>
+        <div id="travelDetails" class="hidden-field">
+          <div class="field"><label for="travellers">Number of people travelling *</label><input id="travellers" name="travellers" type="number" min="1" max="50" value="1"></div>
+          <div class="field"><label for="accommodationNeeded">Do you need accommodation? *</label><select id="accommodationNeeded" name="accommodationNeeded"><option value="">Please select</option><option value="Yes">Yes</option><option value="No">No</option></select></div>
+          <div class="accommodation"><strong>Accommodation arrangements</strong><p>For guests travelling from outside Bangalore, accommodation details will be shared privately before the wedding.</p></div>
+        </div>
+        <button class="btn" id="submitRsvp" type="submit" style="width:100%;margin-top:10px">Submit RSVP</button>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer>Made with love for Jeethu &amp; Pooja · December 2026</footer>
+  <script>
+    // Add your Google Apps Script /exec URL here to save responses to Google Sheets.
+    const GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_EXEC_URL_HERE";
+    const intro = document.getElementById("intro");
+    const openButton = document.getElementById("openInvitation");
+    let introTimer;
+    function closeIntro(){intro.classList.add("hidden");clearTimeout(introTimer)}
+    openButton.addEventListener("click",closeIntro);
+    introTimer=setTimeout(closeIntro,4000);
 
-<section class="section" id="memories"><div class="wrap"><div class="section-head"><div class="eyebrow">Keep the moments close</div><h2>Wedding Memories</h2><p>We would love to see the celebrations through your eyes.</p></div><div class="gallery-grid"><img src="gallery1.jpg" alt="Wedding memory 1" loading="lazy"><img src="gallery2.jpg" alt="Wedding memory 2" loading="lazy"><img src="gallery3.jpg" alt="Wedding memory 3" loading="lazy"><img src="gallery4.jpg" alt="Wedding memory 4" loading="lazy"></div><p class="gallery-note">Shared guest uploads will be enabled after the free gallery storage connection is configured.</p><div style="text-align:center;margin-top:18px"><a class="btn outline" href="https://wa.me/917259547850?text=Hi%20Tharun%2C%20I%27d%20like%20to%20share%20photos%20from%20Jeethu%20%26%20Pooja%27s%20wedding." target="_blank" rel="noopener">Share photos with Tharun on WhatsApp ↗</a></div></div></section>
-<section class="section" id="contact"><div class="wrap"><div class="contact"><div class="eyebrow">With love</div><h2>We look forward to celebrating with you</h2><p>Questions about the invitation or accommodation?</p><a class="btn" href="https://wa.me/917259547850" target="_blank" rel="noopener">Contact Tharun on WhatsApp ↗</a></div></div></section>
-</main><footer class="footer"><div class="wrap"><div class="brand" style="justify-content:center">Jeethu <span style="color:var(--gold)">&</span> Pooja</div><div>9 & 10 December 2026 · The Peacock Grove</div><div class="ornament">✦ ❧ ✦</div></div></footer>
-<script>
-const intro=document.getElementById('intro');function openInvitation(){intro.classList.add('opened');document.body.classList.remove('locked');window.setTimeout(()=>{intro.style.display='none'},1550)}document.getElementById('openInvite').addEventListener('click',openInvitation);document.getElementById('skipIntro').addEventListener('click',openInvitation);
-const menuToggle=document.getElementById('menuToggle'),mobileMenu=document.getElementById('mobileMenu');menuToggle.addEventListener('click',()=>{const show=mobileMenu.classList.toggle('show');menuToggle.setAttribute('aria-expanded',String(show));menuToggle.textContent=show?'✕':'☰'});mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileMenu.classList.remove('show');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰'}));
-const city=document.getElementById('city'),otherWrap=document.getElementById('other-city-wrap'),otherCity=document.getElementById('other-city'),countWrap=document.getElementById('traveller-count-wrap'),count=document.getElementById('traveller-count'),stayPanel=document.getElementById('stay-panel'),stay=document.getElementById('stay');function updateTravel(){const away=city.value!==''&&city.value!=='Bangalore';otherWrap.hidden=city.value!=='Other';otherCity.required=city.value==='Other';countWrap.hidden=!away;count.required=away;stayPanel.hidden=!away;stay.required=away;if(!away){count.value='';stay.value='';otherCity.value=''} }city.addEventListener('change',updateTravel);
-// Add the deployed Google Apps Script Web App URL here after setting up the sheet. Leave empty until configured.
-const RSVP_ENDPOINT='';
-const form=document.getElementById('rsvp-form'),status=document.getElementById('rsvp-status');form.addEventListener('submit',async e=>{e.preventDefault();const data=Object.fromEntries(new FormData(form).entries());if(data.city==='Other'&&!data.otherCity){status.textContent='Please enter the city you are travelling from.';return}data.city=data.city==='Other'?data.otherCity:data.city;data.timestamp=new Date().toISOString();if(!RSVP_ENDPOINT){const lines=['Jeethu & Pooja Wedding RSVP','Full name: '+data.name,'Phone: '+data.phone,'Attendance: '+data.attending,'Travelling from: '+data.city];if(data.travellerCount)lines.push('Number travelling: '+data.travellerCount);if(data.accommodation)lines.push('Accommodation required: '+data.accommodation);if(data.notes)lines.push('Notes: '+data.notes);status.textContent='The spreadsheet connection is not configured yet. Opening WhatsApp as a temporary fallback.';window.open('https://wa.me/917259547850?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');return}const btn=form.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Sending…';try{await fetch(RSVP_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data)});status.textContent='Thank you! Your RSVP has been submitted.';form.reset();updateTravel()}catch(err){status.textContent='Could not submit right now. Please contact Tharun on WhatsApp.'}finally{btn.disabled=false;btn.textContent='Send RSVP securely ↗'}});
-</script></body></html>
+    const citySelect=document.getElementById("travelCity");
+    const travelDetails=document.getElementById("travelDetails");
+    const otherCityField=document.getElementById("otherCityField");
+    const otherCityInput=document.getElementById("otherCity");
+    const travellersInput=document.getElementById("travellers");
+    const accommodationSelect=document.getElementById("accommodationNeeded");
+    function updateCityFields(){
+      const city=citySelect.value;
+      const needsTravelDetails=city!==""&&city!=="Bangalore";
+      const needsOtherCity=city==="Other";
+      travelDetails.classList.toggle("hidden-field",!needsTravelDetails);
+      otherCityField.classList.toggle("hidden-field",!needsOtherCity);
+      travellersInput.required=needsTravelDetails;
+      accommodationSelect.required=needsTravelDetails;
+      otherCityInput.required=needsOtherCity;
+      if(!needsTravelDetails){travellersInput.value="1";accommodationSelect.value=""}
+      if(!needsOtherCity)otherCityInput.value="";
+    }
+    citySelect.addEventListener("change",updateCityFields);
+    document.getElementById("rsvpForm").addEventListener("submit",async function(event){
+      event.preventDefault();
+      const message=document.getElementById("formMessage");
+      const submitButton=document.getElementById("submitRsvp");
+      if(!GOOGLE_SCRIPT_URL.startsWith("https://script.google.com/")){
+        message.textContent="The form is not connected to Google Sheets yet. Your RSVP has not been saved.";
+        return;
+      }
+      const data=Object.fromEntries(new FormData(this).entries());
+      data.city=data.city==="Other"?data.otherCity:data.city;
+      delete data.otherCity;
+      data.submittedAt=new Date().toISOString();
+      submitButton.disabled=true;submitButton.textContent="Submitting…";message.textContent="";
+      try{
+        await fetch(GOOGLE_SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8"},body:new URLSearchParams(data).toString()});
+        message.textContent="Your RSVP request has been sent. Thank you! Please contact the hosts if you need confirmation.";
+        this.reset();updateCityFields();
+      }catch(error){message.textContent="We couldn't send your RSVP. Please try again or contact the hosts."}
+      finally{submitButton.disabled=false;submitButton.textContent="Submit RSVP"}
+    });
+  </script>
+</body>
+</html>
