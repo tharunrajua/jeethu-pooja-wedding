@@ -25,3 +25,12 @@ Autoplay with sound is subject to browser/device policies and the YouTube player
 
 MUSIC PLAYER FIX (YouTube)
 The previous package was missing the actual player code. This package now includes the YouTube IFrame Player API for video dBN20aGUV5Q, a visible 16:9 player section, and a floating Play/Pause control. Playback is requested when the guest taps Open the Invitation. Browser/device settings and the video's embedding permissions can still prevent playback; in that case guests can use the visible player or open the video directly on YouTube.
+
+
+BACKGROUND MUSIC UPDATE
+- The visible YouTube music section has been removed.
+- The uploaded MP3 is included as wedding-background.mp3.
+- Music starts when the guest taps Open the Invitation.
+- A small floating music icon toggles playback.
+- Keep wedding-background.mp3 in the same folder as index.html when deploying.
+- The MP3 is encoded at 128 kbps to reduce download size.
