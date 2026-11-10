@@ -21,3 +21,7 @@ The selected YouTube track (video ID dBN20aGUV5Q) is embedded using YouTube's pr
 A floating Music on/off control pauses or resumes playback. YouTube player remains
 visible in the Wedding Song section in accordance with embedded-player requirements.
 Autoplay with sound is subject to browser/device policies and the YouTube player.
+
+
+MUSIC PLAYER FIX (YouTube)
+The previous package was missing the actual player code. This package now includes the YouTube IFrame Player API for video dBN20aGUV5Q, a visible 16:9 player section, and a floating Play/Pause control. Playback is requested when the guest taps Open the Invitation. Browser/device settings and the video's embedding permissions can still prevent playback; in that case guests can use the visible player or open the video directly on YouTube.
